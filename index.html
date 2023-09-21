@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap Resume</title>
+    <style>
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute; /* Change position to absolute */
+        z-index: -1; /* Set a lower z-index value */
+        top: 40px; /* Adjust the top position as needed */
+        left: 50%; /* Center the image horizontally */
+        transform: translateX(-50%); /* Center the image horizontally */
+    }
+     
+        .profile-name {
+          padding: 5px;
+          width: 25%;
+          border-radius: 1%;
+          font-size: 50px;
+          margin-left: 38%;
+          background-color: #fabe28;
+          color: black;
+          position: relative; /* Add a position property */
+          z-index: 2; /* Set a higher z-index value */
+          top: 155px;
+        }
+        #tc {
+          margin-top: -50px;
+          padding: 15px;
+          height: 190px;
+          background-color: #565656;
+          position: relative; /* Add a position property */
+          z-index: 1; /* Set a lower z-index value */
+        }    
+        #tc1 {
+          margin-top: 30px;
+          padding: 10px;
+          background-color: #565656;
+          position: relative; /* Add a position property */
+          z-index: 0; /* Set an even lower z-index value */
+        }
+      #tc2 {
+        margin-top: 10px;
+      }
+        .vertical {
+            border-left: 1px solid #333; 
+            height:1100px;
+            position: absolute;
+            top:330px;
+            left: 50%; 
+        }
+        #right-section {
+            position: absolute;
+            left: 55%;
+            top: 320px;
+            width: 45%;
+        }
+        label {
+            font-size: 1rem;
+          }
+          .progress-container ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Adjust the gap between items as needed */
+          }
+          
+          .progress-container li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          .progress-container label {
+            flex: 1;
+            margin-right: 10px; /* Adjust the margin between label and progress bar */
+          }
+          
+          .progress-container progress {
+            flex: 3; /* Adjust the width of the progress bar as needed */
+            height: 8px; /* Adjust the height as needed */
+            width: 50%;
+            background-color: yellow; /* Set the background color to yellow */
+          }
+          
+          .progress-container progress::-webkit-progress-bar {
+            background-color: lightgray;
+          }
+          
+          .progress-container progress::-webkit-progress-value {
+            background-color: yellow; /* Set the progress bar color to yellow */
+          }
+          
+          .progress-container progress::-moz-progress-bar {
+            background-color: yellow; /* Set the progress bar color to yellow for Firefox */
+          }          
+</style>
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+        <div id="tc" class="text-center">
+                <img src="BD.jpeg" alt="Your Profile" class="img-fluid profile-image">
+                <h2 class="profile-name">BRIAN DUDEY</h2>
+        </div>
+            <div id="tc1" class="text-center">
+            <p></p>
+            </div>
+            <div id="tc2" class="text-center">
+              <p>N. Damen Avenue, Chicago 99999 | 999-999-999 | hello@kickresume.com | www.kickresume.com</p>
+          </div><hr>
+            <div class="col-md-5">
+                <i class="fas fa-user"></i> <b>Profile</b><br><br>
+                <p>Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitious, adventurous, assiduous, animated, and an alliteration advocate.</p><br>
+                <i class="fas fa-cogs"></i> <b>Skills</b>
+                <ul type="none"><br>
+                    <li class="text-center"><b>Technical Skills</b>
+                        <div class="progress-container">
+                            <ul type="none">
+                              <li>
+                                <label for="js">JavaScript</label>
+                                <progress id="js" max="100" value="90"></progress>
+                              </li>
+                              <li>
+                                <label for="css">CSS</label>
+                                <progress id="css" max="100" value="60"></progress>
+                              </li>
+                              <li>
+                                <label for="html">HTML</label>
+                                <progress id="html" max="100" value="70"></progress>
+                              </li>
+                              <li>
+                                <label for="react">React</label>
+                                <progress id="react" max="100" value="65"></progress>
+                              </li>
+                              <li>
+                                <label for="redux">Redux</label>
+                                <progress id="redux" max="100" value="65"></progress>
+                              </li>
+                              <li>
+                                <label for="mongodb">MongoDB</label>
+                                <progress id="mongodb" max="100" value="85"></progress>
+                              </li>
+                            </ul>
+                          </div>                            
+                    </li><br>
+                    <li class="text-center"><b>Additional Skills</b>
+                        <div class="progress-container">
+                            <ul type="none">
+                            <li><label for="Project Management">Project Management</label>
+                                <progress id="Project Management" max="100" value="100"></progress></li>
+                            <li><label for="Recruitment">Recruitment</label>
+                                <progress id="Recruitment" max="100" value="80"></progress></li>
+                            <li><label for="Business Development">Business Development</label>
+                                <progress id="Business Development" max="100" value="100"></progress></li>
+                            <li><label for="Editing">Editing</label>
+                                <progress id="Editing" max="100" value="80"></progress></li>
+                                <li><label for="Fundraising">Fundraising</label>
+                                <progress id="Fundraising" max="100" value="100"></progress></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <i class="fas fa-briefcase"></i> <b>Work Experience</b>
+                <p><span style="margin-right: 280px;"><b>Event Manager</b></span>03/2014 - 02/2017</p>
+                <p>C3 Presents, Washington DC</p>
+<ul>
+<li>Lead and execute all phases of event planning<br> and production spanning committee recruitment,<br> training, vendor relationships and on-site facilitation.</li>
+<li>Brought new business to the organization through<br> relentless networking and stewardship which helped<br> the company win the bid for the State Department Summit<br> on the Middle East and, the companies largest civic event to date,<br> the United State of Women</li>
+<li>Exercise fiscal control over budget creation,<br> tracking and reporting. Collaborate with employees<br> at all organizational levels to advance cohesive operations.</li> 
+</ul>
+</div>
+<div class="vertical"></div>
+            <div id="right-section" class="col-4">
+                <i class="fas fa-briefcase"></i> <b>Work Experience</b><br><br>
+                <p><span style="margin-right: 200px;"><b>Community Relations</b></span>06/2011 - 01/2014</p>
+                <p><b>Manager</b></p>
+                <p>Gay & Lesbian Elder Housing, Los Angeles</p>
+                <ul>
+                    <li>Arranging presentations and pitch deck.</li>
+                    <li>Designing a PR plan and establishing important focus points.</li>
+                    <li>Designing, creating and managing content<br> across multiple communication platforms.</li>
+                    <li>Building relationships with key media players.</li>
+                </ul>                
+            <div><br>
+                <i class="fas fa-graduation-cap"></i> <b>Education</b><br><br>
+                <p><span style="margin-right: 260px;"><b>Engineering Immersion</b></span>11/2018 - 06/2018</p>
+                <p><b>Program</b></p>
+                <p>Thinkful Chicago, IL</p>
+                <p>Project-focused intensive program with emphasis<br> on Mongo, Express, React, and JavaScript (MERN)<br> technical stack.</p>
+                <ul>
+                    <li>Developed a full-stack web application,<br> "RenewU, using React that allows users to<br> explore various aspects of meditation. User's<br> progress is stored on a backend created using Node and MongoDB.</li>
+                <li>Developed a language learning app, "Foodie Phonetics<br> using spaced repetition and a linked list data structure.<br> React was used to create the front end components while Node and<br> Mongo were used to create a backend that stores user data.</li>
+                <li>Developed a concierge app, "Pley", for individuals looking<br> for curated suggestions when visiting a new place.<br> React was used to develop the front end which includes real-time chat,<br> drag and drop and variety of advanced features.
+                    <br>The backend, built using Node, Express, and Mongo, takes advantage of<br> well- developed RESTful API, Geospatial searching, and user authentication with JWT.</li>
+                </ul>
+                <p><span style="margin-right: 330px;"><b>BA, English</b></span>09/2001 - 09/2005</b></p>
+                <p>University of California, Los Angles</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
